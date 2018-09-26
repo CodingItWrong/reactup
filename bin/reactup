@@ -27,3 +27,13 @@ yarn add -D eslint \
 cp "${DIR}/template/.eslintrc.js" .eslintrc.js
 git add .
 git commit -m "Add ESLint"
+
+yarn add -D cypress \
+            cypress-react-unit-test \
+            @cypress/webpack-preprocessor \
+            babel-plugin-transform-class-properties
+mkdir cypress
+mkdir cypress/plugins
+cp "${DIR}/template/cypress/plugins/index.js" cypress/plugins/index.js
+git add .
+git commit -m "Add Cypress"
