@@ -16,7 +16,7 @@ rm src/App.css \
 git add .
 git commit -m "Remove boilerplate"
 
-cp -r "${DIR}/template/src" src
+cp -r "${DIR}/template/src" .
 git add .
 git commit -m "Add sample code"
 
