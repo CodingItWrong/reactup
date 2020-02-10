@@ -28,7 +28,8 @@ yarn add -D eslint \
             eslint-plugin-jest \
             eslint-plugin-jsx-a11y \
             eslint-plugin-prettier \
-            eslint-plugin-react
+            eslint-plugin-react \
+            prettier
 cp "${DIR}/template/.eslintrc.js" .eslintrc.js
 cp "${DIR}/template/.prettierrc.js" .prettierrc.js
 git add .
