@@ -21,7 +21,9 @@ git commit -m "Remove boilerplate"
 yarn add -D eslint \
             babel-eslint \
             eslint-config-prettier \
+            eslint-plugin-cypress \
             eslint-plugin-import \
+            eslint-plugin-jest \
             eslint-plugin-jsx-a11y \
             eslint-plugin-prettier \
             eslint-plugin-react
