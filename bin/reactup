@@ -13,10 +13,12 @@ rm src/App.css \
    src/App.test.js \
    src/index.css \
    src/logo.svg
-cp "${DIR}/template/src/App.js" src/App.js
-cp "${DIR}/template/src/index.js" src/index.js
 git add .
 git commit -m "Remove boilerplate"
+
+cp -r "${DIR}/template/src" src
+git add .
+git commit -m "Add sample code"
 
 yarn add -D eslint \
             babel-eslint \
