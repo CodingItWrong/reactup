@@ -34,12 +34,6 @@ cp "${DIR}/template/.prettierrc.js" .prettierrc.js
 git add .
 git commit -m "Add ESLint and Prettier"
 
-yarn add -D cypress \
-            cypress-react-unit-test \
-            @cypress/webpack-preprocessor \
-            babel-plugin-transform-class-properties
-mkdir cypress
-mkdir cypress/plugins
-cp "${DIR}/template/cypress/plugins/index.js" cypress/plugins/index.js
+yarn add -D cypress
 git add .
 git commit -m "Add Cypress"
