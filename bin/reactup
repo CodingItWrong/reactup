@@ -38,3 +38,8 @@ git commit -m "Add ESLint and Prettier"
 yarn add -D cypress
 git add .
 git commit -m "Add Cypress"
+
+mkdir -p .github/workflows
+cp "${DIR}/template/github/workflows/test.yml" .github/workflows/test.yml
+git add .
+git commit -m "Set up GitHub Actions workflow"
