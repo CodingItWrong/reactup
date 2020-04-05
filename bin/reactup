@@ -9,6 +9,15 @@ git init .
 git add .
 git commit -m "Create react app"
 
+yarn add -D react-hot-loader \
+            react-dom@npm:@hot-loader/react-dom
+git add .
+git commit -m "Add React Hot Loader"
+
+yarn add -D source-map-explorer
+git add .
+git commit -m "Add Source Map Explorer"
+
 rm src/App.css \
    src/App.test.js \
    src/index.css \
@@ -20,22 +29,20 @@ cp -r "${DIR}/template/src" .
 git add .
 git commit -m "Add sample code"
 
+# do not add babel-eslint, as it conflicts with the version in CRA. Not needed
 yarn add -D eslint \
-            babel-eslint \
             eslint-config-prettier \
             eslint-plugin-cypress \
-            eslint-plugin-import \
             eslint-plugin-jest \
-            eslint-plugin-jsx-a11y \
             eslint-plugin-prettier \
-            eslint-plugin-react \
             prettier
 cp "${DIR}/template/.eslintrc.js" .eslintrc.js
 cp "${DIR}/template/.prettierrc.js" .prettierrc.js
 git add .
-git commit -m "Add ESLint and Prettier"
+git commit -m "Add Prettier and custom ESLint config"
 
 yarn add -D cypress
+cp "${DIR}/template/cypress.json" cypress.json
 git add .
 git commit -m "Add Cypress"
 
@@ -43,3 +50,7 @@ mkdir -p .github/workflows
 cp "${DIR}/template/github/workflows/test.yml" .github/workflows/test.yml
 git add .
 git commit -m "Set up GitHub Actions workflow"
+
+cp "${DIR}/template/README.md" README.md
+git add .
+git commit -m "Add custom readme"

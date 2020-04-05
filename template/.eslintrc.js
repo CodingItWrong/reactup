@@ -1,11 +1,11 @@
 module.exports = {
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'prettier'],
+  extends: ['react-app', 'prettier'],
   plugins: ['prettier', 'jest', 'cypress'],
   parser: 'babel-eslint',
   env: {
     browser: true,
     'cypress/globals': true,
-    es6: true, // for Promise
+    es6: true,
     'jest/globals': true,
   },
   settings: {
@@ -14,7 +14,6 @@ module.exports = {
     },
   },
   rules: {
-    'prettier/prettier': 'error',
-    'react/prop-types': 'off',
+    'prettier/prettier': 'warn',
   },
-}
+};
