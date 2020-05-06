@@ -9,6 +9,7 @@ React project setup script, using:
 - [Cypress](https://www.cypress.io/) end-to-end testing
 - [GitHub Actions](https://www.cypress.io/) for CI, including Cypress screenshots and videos
 - [Source Map Explorer](https://github.com/danvk/source-map-explorer) to visualize bundle size
+- [react-axe](https://github.com/dequelabs/react-axe) for accessibility auditing
 
 ## Usage
 

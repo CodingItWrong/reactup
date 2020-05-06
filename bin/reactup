@@ -18,6 +18,10 @@ yarn add -D source-map-explorer
 git add .
 git commit -m "Add Source Map Explorer"
 
+yarn add -D react-axe
+git add .
+git commit -m "Add react-axe"
+
 rm src/App.css \
    src/App.test.js \
    src/index.css \
