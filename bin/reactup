@@ -39,6 +39,8 @@ yarn add -D eslint-config-prettier \
             eslint-plugin-cypress \
             eslint-plugin-jest \
             eslint-plugin-prettier \
+            husky \
+            lint-staged \
             prettier
 cp "${DIR}/template/.eslintrc.js" .eslintrc.js
 cp "${DIR}/template/.prettierrc.js" .prettierrc.js

@@ -5,6 +5,7 @@ React project setup script, using:
 - `create-react-app`
 - [React Hot Loader](https://github.com/gaearon/react-hot-loader)
 - [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/)
+- [Husky](https://github.com/typicode/husky) and [Lint-Staged](https://github.com/okonet/lint-staged) for linting staged files upon commit
 - [React Testing Library](https://testing-library.com/react) component testing
 - [Cypress](https://www.cypress.io/) end-to-end testing
 - [GitHub Actions](https://www.cypress.io/) for CI, including Cypress screenshots and videos
@@ -42,9 +43,26 @@ The following steps are not yet automated, and need to be done after running the
 ```diff
    "test": "EXTEND_ESLINT=true react-scripts test",
 +  "cypress": "cypress open",
++  "lint": "eslint src",
 +  "analyze": "yarn build && source-map-explorer 'build/static/js/*.js'",
    "eject": "react-scripts eject"
  },
+```
+
+- Add the following at the end of `package.json`:
+
+```diff
+     "source-map-explorer": "^2.4.2"
++  },
++  "husky": {
++    "hooks": {
++      "pre-commit": "lint-staged"
++    }
++  },
++  "lint-staged": {
++    "*.js": "eslint --max-warnings 0"
+   }
+ }
 ```
 
 - Run `yarn cypress` and it will generate default test files for you
