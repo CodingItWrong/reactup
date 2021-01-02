@@ -9,6 +9,10 @@ git init .
 git add .
 git commit -m "Create react app"
 
+echo "package-lock=false" >> .npmrc
+git add .
+git commit -m "Prevent package lock"
+
 yarn add -D react-hot-loader \
             react-dom@npm:@hot-loader/react-dom
 git add .
