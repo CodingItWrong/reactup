@@ -29,7 +29,8 @@ git commit -m "Add react-axe"
 rm src/App.css \
    src/App.test.js \
    src/index.css \
-   src/logo.svg
+   src/logo.svg \
+   src/serviceWorker.js
 git add .
 git commit -m "Remove boilerplate"
 
