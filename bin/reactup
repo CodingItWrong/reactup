@@ -19,6 +19,7 @@ git add .
 git commit -m "Add React Hot Loader"
 
 yarn add -D source-map-explorer
+npm set-script analyze "source-map-explorer 'build/static/js/*.js'"
 git add .
 git commit -m "Add Source Map Explorer"
 
@@ -49,11 +50,13 @@ yarn add -D eslint-config-prettier \
             prettier
 cp "${DIR}/template/.eslintrc.js" .eslintrc.js
 cp "${DIR}/template/.prettierrc.js" .prettierrc.js
+npm set-script lint "eslint src"
 git add .
 git commit -m "Add Prettier and custom ESLint config"
 
 yarn add -D cypress
 cp "${DIR}/template/cypress.json" cypress.json
+npm set-script cypress "cypress open"
 git add .
 git commit -m "Add Cypress"
 

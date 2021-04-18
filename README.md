@@ -12,6 +12,12 @@ React project setup script, using:
 - [Source Map Explorer](https://github.com/danvk/source-map-explorer) to visualize bundle size
 - [react-axe](https://github.com/dequelabs/react-axe) for accessibility auditing
 
+## Requirements
+
+- [Node][node]
+- [NPM][npm] >= 7.1
+- [Yarn][yarn]
+
 ## Usage
 
 Add `reactup/bin` to your `PATH`.
@@ -38,17 +44,6 @@ The following steps are not yet automated, and need to be done after running the
  },
 ```
 
-- Add the following `package.json` scripts:
-
-```diff
-   "test": "EXTEND_ESLINT=true react-scripts test",
-+  "cypress": "cypress open",
-+  "lint": "eslint src",
-+  "analyze": "yarn build && source-map-explorer 'build/static/js/*.js'",
-   "eject": "react-scripts eject"
- },
-```
-
 - Add the following at the end of `package.json`:
 
 ```diff
@@ -70,3 +65,8 @@ The following steps are not yet automated, and need to be done after running the
 ## License
 
 MIT
+
+[node]: https://nodejs.org/
+[npm]: https://npmjs.com
+[prettier]: https://prettier.io/
+[yarn]: https://yarnpkg.com/en/docs/install
