@@ -54,7 +54,7 @@ The following steps are not yet automated, and need to be done after running the
 
 ## License
 
-MIT
+Apache-2.0
 
 [node]: https://nodejs.org/
 [npm]: https://npmjs.com
