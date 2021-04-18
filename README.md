@@ -1,8 +1,8 @@
 # reactup
 
-React project setup script, using:
+Generates a React project using:
 
-- `create-react-app`
+- [Create React App](https://create-react-app.dev/)
 - [React Hot Loader](https://github.com/gaearon/react-hot-loader)
 - [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/)
 - [Husky](https://github.com/typicode/husky) and [Lint-Staged](https://github.com/okonet/lint-staged) for linting staged files upon commit
@@ -18,13 +18,17 @@ React project setup script, using:
 - [NPM][npm] >= 7.1
 - [Yarn][yarn]
 
-## Usage
+## Installation
 
-Add `reactup/bin` to your `PATH`.
+Clone the repo and add `babelup/bin` to your `PATH`
+
+## Usage
 
 ```
 # reactup my-new-app-name
 ```
+
+Read the `README.md` added to the project for details on using that project.
 
 ## Manual Configuration
 
