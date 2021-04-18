@@ -34,20 +34,6 @@ Read the `README.md` added to the project for details on using that project.
 
 The following steps are not yet automated, and need to be done after running the script:
 
-- Update the `start`, `build`, and `test` commands with the `EXTEND_ESLINT=true` envvar:
-
-```diff
- "scripts": {
--  "start": "react-scripts start",
--  "build": "react-scripts build",
--  "test": "react-scripts test",
-+  "start": "EXTEND_ESLINT=true react-scripts start",
-+  "build": "EXTEND_ESLINT=true react-scripts build",
-+  "test": "EXTEND_ESLINT=true react-scripts test",
-   "eject": "react-scripts eject"
- },
-```
-
 - Add the following at the end of `package.json`:
 
 ```diff

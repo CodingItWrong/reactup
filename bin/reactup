@@ -51,6 +51,9 @@ yarn add -D eslint-config-prettier \
 cp "${DIR}/template/.eslintrc.js" .eslintrc.js
 cp "${DIR}/template/.prettierrc.js" .prettierrc.js
 npm set-script lint "eslint src"
+npm set-script start "EXTEND_ESLINT=true react-scripts start"
+npm set-script build "EXTEND_ESLINT=true react-scripts build"
+npm set-script test "EXTEND_ESLINT=true react-scripts test"
 git add .
 git commit -m "Add Prettier and custom ESLint config"
 
