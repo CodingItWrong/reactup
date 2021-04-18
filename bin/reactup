@@ -31,7 +31,7 @@ rm src/App.css \
    src/App.test.js \
    src/index.css \
    src/logo.svg \
-   src/serviceWorker.js
+   src/reportWebVitals.js
 git add .
 git commit -m "Remove boilerplate"
 
