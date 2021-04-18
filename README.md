@@ -8,7 +8,7 @@ React project setup script, using:
 - [Husky](https://github.com/typicode/husky) and [Lint-Staged](https://github.com/okonet/lint-staged) for linting staged files upon commit
 - [React Testing Library](https://testing-library.com/react) component testing
 - [Cypress](https://www.cypress.io/) end-to-end testing
-- [GitHub Actions](https://www.cypress.io/) for CI, including Cypress screenshots and videos
+- [GitHub Actions](https://github.com/features/actions) for CI, including Cypress screenshots and videos
 - [Source Map Explorer](https://github.com/danvk/source-map-explorer) to visualize bundle size
 - [react-axe](https://github.com/dequelabs/react-axe) for accessibility auditing
 
