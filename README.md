@@ -20,7 +20,7 @@ Generates a React project using:
 
 ## Installation
 
-Clone the repo and add `babelup/bin` to your `PATH`
+Clone the repo and add `reactup/bin` to your `PATH`
 
 ## Usage
 
