@@ -58,5 +58,4 @@ Apache-2.0
 
 [node]: https://nodejs.org/
 [npm]: https://npmjs.com
-[prettier]: https://prettier.io/
 [yarn]: https://yarnpkg.com/en/docs/install
