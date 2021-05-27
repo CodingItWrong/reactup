@@ -14,9 +14,9 @@ Generates a React project using:
 
 ## Requirements
 
-- [Node][node]
-- [NPM][npm] >= 7.1
-- [Yarn][yarn]
+- [Node](https://nodejs.org/)
+- [NPM](https://npmjs.com) >= 7.1
+- [Yarn](https://yarnpkg.com/en/docs/install)
 
 ## Installation
 
@@ -55,7 +55,3 @@ The following steps are not yet automated, and need to be done after running the
 ## License
 
 Apache-2.0
-
-[node]: https://nodejs.org/
-[npm]: https://npmjs.com
-[yarn]: https://yarnpkg.com/en/docs/install
