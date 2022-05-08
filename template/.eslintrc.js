@@ -1,17 +1,8 @@
 module.exports = {
-  extends: ['react-app', 'prettier'],
-  plugins: ['prettier', 'jest', 'cypress'],
-  parser: '@babel/eslint-parser',
+  extends: ['react-app', 'react-app/jest', 'prettier'],
+  plugins: ['cypress', 'prettier'],
   env: {
-    browser: true,
     'cypress/globals': true,
-    es6: true,
-    'jest/globals': true,
-  },
-  settings: {
-    react: {
-      version: 'detect',
-    },
   },
   rules: {
     'import/order': ['warn', {alphabetize: {order: 'asc'}}], // group and then alphabetize lines - https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md

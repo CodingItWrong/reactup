@@ -36,9 +36,7 @@ git commit -m "Add sample code"
 
 # do not add eslint or babel-eslint, as they conflict with the versions in CRA. Not needed
 yarn add -D eslint-config-prettier \
-            eslint-config-react-app \
             eslint-plugin-cypress \
-            eslint-plugin-jest \
             eslint-plugin-prettier \
             husky \
             lint-staged \
