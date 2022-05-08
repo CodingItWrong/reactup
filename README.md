@@ -3,7 +3,6 @@
 Generates a React project using:
 
 - [Create React App](https://create-react-app.dev/)
-- [React Hot Loader](https://github.com/gaearon/react-hot-loader)
 - [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/)
 - [Husky](https://github.com/typicode/husky) and [Lint-Staged](https://github.com/okonet/lint-staged) for linting staged files upon commit
 - [React Testing Library](https://testing-library.com/react) component testing

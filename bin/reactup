@@ -13,11 +13,6 @@ echo "package-lock=false" >> .npmrc
 git add .
 git commit -m "Prevent package lock"
 
-yarn add -D react-hot-loader \
-            react-dom@npm:@hot-loader/react-dom
-git add .
-git commit -m "Add React Hot Loader"
-
 yarn add -D source-map-explorer
 npm set-script analyze "source-map-explorer 'build/static/js/*.js'"
 git add .
