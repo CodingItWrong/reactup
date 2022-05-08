@@ -1,7 +1,3 @@
-import initializeAxe from './axe';
-
-initializeAxe();
-
 const App = () => {
   return (
     <>

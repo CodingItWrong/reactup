@@ -18,7 +18,7 @@ npm set-script analyze "source-map-explorer 'build/static/js/*.js'"
 git add .
 git commit -m "Add Source Map Explorer"
 
-yarn add -D react-axe
+yarn add -D @axe-core/react
 git add .
 git commit -m "Add react-axe"
 
